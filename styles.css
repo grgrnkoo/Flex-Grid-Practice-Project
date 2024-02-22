@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(205, 204, 204);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    font-size: 20px;
+}
+
+main {
+    position: relative;
+    top: 5rem;
+}
+
+.bordered {
+    border-bottom: rgb(0, 0, 0) solid 1px;
+    border-top: rgb(0, 0, 0) solid 1px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+strong {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    color:rgb(0, 0, 255);
+    font-family: "Merriweather", serif;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: rgb(0, 0, 255);
+}
+
+/* 1. Navigation Bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {    
+    list-style-type: none;
+}
+
+nav a {
+    list-style-type: none;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+/* 2. Logo Section */
+
+.logo-jumbo {
+    display: flex;
+    background-image: url('./img/background.jpeg');
+    filter: brightness(0.5);
+    background-size: cover;
+    background-position: 50% 85%;
+    height: 30rem;
+    width: 100%;
+}
+
+.logo-jumbo img {
+    position: relative;
+    right: 10rem;
+    background-image: url('./img/logo.png');
+    background-size: contain;
+    background-position-y: 50%;
+    align-self: center;
+    overflow: hidden;
+    filter: invert(100%);
+}
+
+/* 3. About Section  */
+
+#about-us {
+    box-sizing: border-box;
+    text-align: end;
+}
+
+#about-us h2 {
+    padding-right: 8rem;
+}
+
+#about-us p {
+    width: 60%;
+    margin: 4rem 10rem 4rem auto;
+}
+
+/* 4. Products Section  */
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#products h2 {
+    text-align: start;
+    padding-left: 8rem;
+}
+
+#products img{
+    width: 15rem;
+    height: auto;
+}
+
+#products .img-box {
+    width: 15rem;
+    height: 15rem;
+    margin: auto 1rem;
+    overflow: hidden;
+    grid-row: 1 / span 2;
+    border-radius: 2rem;
+}
+
+#products .product {
+    box-sizing: border-box;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    border:rgb(0, 0, 0) solid 1px;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, .6);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3rem;
+}
+
+.product h4, .product p{
+    text-align: start;
+    margin-left: 3rem;
+}
+
+/* 5. Mission Section  */
+
+#mission {
+    box-sizing: border-box;
+    text-align: start;
+}
+
+#mission h2 {
+    padding-left: 8rem;
+}
+
+#mission p {
+    width: 60%;
+    margin: 4rem auto 4rem 10rem;
+}
+
+/* 6. Crew Section  */
+
+#crew h2 {
+    text-align: right;
+    padding-right: 8rem;
+}
+
+#crew .crew {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10rem 0;
+    box-sizing: border-box;
+}
+
+#crew .img-box {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0% 50%;
+    margin: 0 auto;
+}
+
+.member img {
+    width: 17rem;
+}
+
+#dan {
+    width: 25rem;
+    position: relative;
+    right: 3rem;
+}
+
+#crew .member {
+    box-sizing: border-box;
+    width: 25rem;
+    background-color: rgba(0, 0, 0, .8);
+    color: rgb(255, 255, 255);
+    margin: 3rem;
+    padding: 5rem 2rem 8rem 2rem;
+    border-radius: 3rem;
+}
+
+#crew hr {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+/* 7. Contact Us  */
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+#contacts button {
+    background-color: rgb(205, 204, 204);
+    border: rgba(0, 0, 0, .8) solid 1px;
+    box-shadow: none;
+    width: 4.5rem;
+    height: 2.2rem;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: .5rem;
+    transition: color 0.5s;
+    transition: border 0.5s;
+    transition: background-color 0.5s;
+}
+
+#contacts button:hover {
+    color: rgb(0, 0, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: rgb(0, 0, 255) solid 1px;
+    cursor: pointer;
+}
+
+h6 {
+    font-weight: 400;
+}
